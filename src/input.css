@@ -1,0 +1,12 @@
+.fondoInput {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  color: white;
+  background-color: black;
+}
+.fondoInput p {
+  margin-right: 1rem;
+}

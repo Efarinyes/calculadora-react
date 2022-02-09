@@ -1,0 +1,25 @@
+/* .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 25%; 
+} */
+.teclatNumsContainer {
+  background-color: beige;
+  padding: 0.6rem;
+}
+.teclatNums {
+  background-color: burlywood;
+  margin-right: 0.5rem;
+  min-width: 4rem;
+  min-height: 4rem;
+}
+.teclatNumsFinal {
+  background-color: burlywood;
+  min-width: 13rem;
+  min-height: 4rem;
+  margin-right: 0.5rem;
+  flex-direction: flex;
+}

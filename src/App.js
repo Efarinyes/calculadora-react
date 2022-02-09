@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+
+import Clear from "./Clear";
+import Input from "./Input";
+import Teclat from "./Teclat";
 
 function App() {
+  const [valor, setValor] = useState(null);
+
+  const handleClick = (num) => {
+    let digit = setValor(valor + num);
+    console.log(digit);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="App">
+        <h1>Calculadora</h1>
+        <Input />
+        <Teclat passarValor={handleClick} />
+        <Clear />
+      </div>
     </div>
   );
 }
