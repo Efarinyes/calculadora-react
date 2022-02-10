@@ -1,10 +1,10 @@
 import "./input.css";
 
-function Input() {
+function Input({ valor }) {
   return (
     <>
       <div className="fondoInput">
-        <p> </p>
+        <h2> {valor} </h2>
       </div>
     </>
   );
